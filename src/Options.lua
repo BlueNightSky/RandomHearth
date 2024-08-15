@@ -1,0 +1,16 @@
+local addon, rh = ...
+
+local rhOptionsPanel = CreateFrame("Frame")
+local rhTitle = CreateFrame("Frame", nil, rhOptionsPanel)
+local rhDesc = CreateFrame("Frame", nil, rhOptionsPanel)
+local rhOptionsScroll = CreateFrame("ScrollFrame", nil, rhOptionsPanel, "UIPanelScrollFrameTemplate")
+local rhDivider = rhOptionsScroll:CreateLine()
+local rhScrollChild = CreateFrame("Frame")
+local rhSelectAll = CreateFrame("Button", nil, rhOptionsScroll, "UIPanelButtonTemplate")
+local rhDeselectAll = CreateFrame("Button", nil, rhOptionsScroll, "UIPanelButtonTemplate")
+local rhOverride = CreateFrame("CheckButton", nil, rhOptionsScroll, "UICheckButtonTemplate")
+local rhListener = CreateFrame("Frame")
+local rhBtn = CreateFrame("Button", "rhB", nil, "SecureActionButtonTemplate")
+local rhDropdown = CreateFrame("Frame", nil, rhOptionsScroll, "UIDropDownMenuTemplate")
+local rhDalHearth = CreateFrame("CheckButton", nil, rhOptionsScroll, "UICheckButtonTemplate")
+local rhGarHearth = CreateFrame("CheckButton", nil, rhOptionsScroll, "UICheckButtonTemplate")
